@@ -1,0 +1,15 @@
+inherit rubygem
+
+NAME="ruby-binding_of_caller"
+VERSION=0.7.2
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby stack tracing module"
+DESCRIPTION="Retrieve the binding of a method's caller. Can also retrieve
+bindings even further up the stack."
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_binding_of_caller_CONTENTS="${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_binding_of_caller_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
