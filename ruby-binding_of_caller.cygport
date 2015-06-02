@@ -11,5 +11,6 @@ bindings even further up the stack."
 ARCH=noarch
 
 PKG_NAMES="${NAME} ${NAME}-doc"
-ruby_binding_of_caller_CONTENTS="${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+# no extension is built for 2.x but it still looks for gem.build_complete
+ruby_binding_of_caller_CONTENTS="${RUBYGEM_EXTDIR#/} ${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
 ruby_binding_of_caller_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
