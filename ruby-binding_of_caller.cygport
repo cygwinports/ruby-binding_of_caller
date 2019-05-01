@@ -1,8 +1,8 @@
 inherit rubygem
 
 NAME="ruby-binding_of_caller"
-VERSION=0.7.2
-RELEASE=2
+VERSION=0.8.0
+RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby stack tracing module"
 DESCRIPTION="Retrieve the binding of a method's caller. Can also retrieve
